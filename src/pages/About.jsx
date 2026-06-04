@@ -4,12 +4,10 @@ function About() {
     return (
         <div>
 
-            {/* ABOUT IMAGE */}
             <div className="about-image">
                 <img src="/images/about-us.jpg" alt="About Us" />
             </div>
 
-            {/* ABOUT SECTION */}
             <div className="aboutus">
 
                 <img src="/images/rosanda.jpg" alt="Euro Kreativ" />
@@ -32,7 +30,6 @@ function About() {
 
             </div>
 
-            {/* VISION SECTION */}
             <div id="vision">
 
                 <div className="v-m">
