@@ -1,0 +1,330 @@
+.footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:white;
+    margin-top:50px;
+}
+nav{
+    background: black;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+
+input{
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.about-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 700px;
+    display: block;
+    filter: brightness(70%);
+}
+.aboutus img{
+    width: 480px;
+    height:380px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border-radius: 50% 10% 45% 10%;
+    margin-bottom: 0px;
+}
+.aboutus {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 60px 40px;
+    flex-wrap: wrap;
+}
+.aboutus-text {
+    max-width: 500px;
+}
+
+.aboutus-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.aboutus-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color:black;
+}
+
+/* section tek visioni */
+#vision {
+    padding: 60px 40px;
+    background: none;
+}
+
+.v-m {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.v-m img {
+    width: 480px;
+    height: 380px;
+    border-radius: 50% 10% 45% 10%;
+    object-fit: cover;
+}
+.aboutus-text-vm {
+    max-width: 540px;
+}
+.aboutus-text-vm h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: black;
+}
+.aboutus-text-vm p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+/*.container {*/
+/*    min-height: 100vh;*/
+/*    padding: 20px;*/
+/*}*/
+.contact-title {
+    text-align: center;
+
+    background:none;
+    color: black;
+}
+
+.contact-title img {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.info {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 400px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.home {
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* HERO BACKGROUND */
+.hero {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+    position: relative;
+
+    gap: 25px;
+}
+
+/* DARK OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+}
+
+/* ENSURE CONTENT IS ABOVE OVERLAY */
+.hero-text,
+.featured {
+    position: relative;
+    z-index: 2;
+}
+
+/* HERO TEXT BOX */
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* BUTTON */
+.hero-text button {
+    margin-top: 15px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background: #ffcc00;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-text button:hover {
+    transform: scale(1.05);
+}
+
+/* FEATURED SECTION */
+.featured {
+    margin-top: 10px;
+}
+
+.featured h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 15px 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    transition: 0.3s;
+    min-width: 120px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.25);
+}
+.details-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+
+.details-card {
+    width: 600px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.details-card h1 {
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+.search-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.search-box input {
+    padding: 8px;
+    width: 100%;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.back-btn{
+    padding:10px 20px;
+    margin-bottom:20px;
+    cursor:pointer;
+    border:none;
+    border-radius:5px;
+}
