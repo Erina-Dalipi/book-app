@@ -64,7 +64,6 @@ input{
     color:black;
 }
 
-/* section tek visioni */
 #vision {
     padding: 60px 40px;
     background: none;
@@ -96,10 +95,7 @@ input{
     line-height: 1.6;
     color: #333;
 }
-/*.container {*/
-/*    min-height: 100vh;*/
-/*    padding: 20px;*/
-/*}*/
+
 .contact-title {
     text-align: center;
 
@@ -181,7 +177,6 @@ button:hover {
     font-family: "Segoe UI", sans-serif;
 }
 
-/* HERO BACKGROUND */
 .hero {
     height: 100vh;
     background-image: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");

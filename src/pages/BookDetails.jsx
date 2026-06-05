@@ -13,8 +13,8 @@ function BookDetails() {
     useEffect(() => {
         if (!id) return;
 
-        const cleanId = id.startsWith("/") ? id : `/${id}`;
-        const url = `https://openlibrary.org${cleanId}.json`;
+        const cleanId = id.startsWith("/") ? id : "/" + id;
+        const url = "https://openlibrary.org" + cleanId + ".json";
 
         fetch(url)
             .then((response) => response.json())
@@ -31,7 +31,6 @@ function BookDetails() {
         typeof book.description === "string"
             ? book.description
             : book.description?.value || "No description";
-
     return (
         <div className="details-wrapper">
             <div className="details-card">
